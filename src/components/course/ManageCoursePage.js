@@ -3,10 +3,16 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as courseActions from '../../actions/courseActions';
+import CourseForm from './CourseForm';
 
 class ManageCoursePage extends React.Component {
   constructor(props, context) {
     super(props, context);
+
+    this.state = {
+      course: Object.assign({}, this.props.course),
+      errors: {}
+    };
   }
 
 
@@ -14,18 +20,25 @@ class ManageCoursePage extends React.Component {
     return (
       <div>
         <h1>Manage Course</h1>
+        <CourseForm
+          allAuthors={[]}
+          course={this.state.course}
+          errors={this.state.errors}
+        />
+        />
       </div>
     );
   }
 }
 
 ManageCoursePage.propTypes = {
-  //myProp: PropTypes.string.isRequired
+  course: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
+  let course = {id: '', watchHref: '', title: '', authorId: '', length: '', category: ''};
   return {
-    state: state
+    course
   };
 }
 
