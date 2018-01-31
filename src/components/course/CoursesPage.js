@@ -15,6 +15,7 @@ class CoursesPage extends React.Component {
 
   redirectToAddCoursePage() {
     this.props.history.push('/course');
+    // 6-os videó jön a part2 mappában
   }
 
   render() {
