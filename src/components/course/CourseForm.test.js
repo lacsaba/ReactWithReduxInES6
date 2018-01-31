@@ -4,7 +4,7 @@ import ShallowRenderer from 'react-test-renderer/shallow';
 import CourseForm from './CourseForm';
 
 function setup(saving) {
-  let props = {
+  const props = {
     course: {},
     saving: saving,
     errors: {},
