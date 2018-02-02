@@ -5,7 +5,7 @@ import initialState from '../reducers/initialState';
 import * as courseActions from '../actions/courseActions';
 
 describe('Store', () => {
-  it('shoud handle creating courses', () => {
+  it('should handle creating courses', () => {
     // arrange
     const store = createStore(rootReducer, initialState);
     const course = {title: 'Clean Code'};
