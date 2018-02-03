@@ -1,0 +1,10 @@
+1. Author Administration (author with course)
+2. Delete course
+3. Hide empty course list
+4. Unsaved changes message (ManageCourseForm)
+5. Client-side validation (validate Category and Link data
+6. Handle 404's (ManageCoursePage, mapStateToProps)
+7. Show number of(#) courses in Header
+8. Pagination
+9. Sort course table (mapStateToProps)
+10. Revert abandoned changes (don't override course, if no save is happening)

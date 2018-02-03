@@ -7,17 +7,20 @@ const authors = [
   {
     id: 'cory-house',
     firstName: 'Cory',
-    lastName: 'House'
+    lastName: 'House',
+    skills: ['Javascript', 'React', 'Redux', 'Functional Programming']
   },
   {
     id: 'scott-allen',
     firstName: 'Scott',
-    lastName: 'Allen'
+    lastName: 'Allen',
+    skills: ['Javascript', 'Angular', 'OOP']
   },
   {
     id: 'dan-wahlin',
     firstName: 'Dan',
-    lastName: 'Wahlin'
+    lastName: 'Wahlin',
+    skills: ['Javascript', 'Vue.js']
   }
 ];
 
