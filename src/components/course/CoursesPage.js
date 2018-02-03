@@ -26,7 +26,7 @@ class CoursesPage extends React.Component {
                value="Add Course"
                className="btn btn-primary"
                onClick={this.redirectToAddCoursePage}/>
-        <CourseList courses={courses} deleteCourse={actions.deleteCourse}/>
+        {courses.length ? <CourseList courses={courses} deleteCourse={actions.deleteCourse}/> : ''}
       </div>
     );
   }

@@ -15,7 +15,7 @@ class AuthorsPage extends React.Component {
     return (
       <div>
         <h1>Authors</h1>
-        <AuthorList authors={authors} />
+        {authors.length ? <AuthorList authors={authors} /> : ''}
       </div>
     );
   }
